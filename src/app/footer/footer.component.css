@@ -1,0 +1,108 @@
+.footer{
+    margin-top: 100px;
+    background-color:#f7941d;
+    width: 100%;
+}
+.footer-content{
+    display: flex;
+}
+.info-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+.info-footer img{
+    width: 60px;
+    display: inline;
+    padding-right: 0 10px;
+}
+.info-footer>div{
+    margin-left: 10px;
+}
+.info-footer h1{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+.info-footer span{
+    display: block;
+    font-size: 14px;
+    font-family: product Sans;
+    color: #fff;
+}
+
+.footer-left img{
+    width: 50%;
+    height: 120px;
+}
+.footer-left h2{
+    display: block;
+    color: #252525;
+    font-size: 18px;
+}
+.footer-left span{
+    color: #252525;
+    font-family: product Sans;
+}
+.footer-center{
+    margin-top: 70px;
+}
+.footer-center h2{
+    color: #f7941d;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu-footer{
+    list-style-type: none;
+
+    padding: 10px 0;
+}
+.click-menu-footer{
+    position: relative;
+}
+.click-menu-footer span{
+    position: absolute;
+    width: 3px;
+    height: 18px;
+    background-color: #f7941d;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+    
+}
+.click-menu-footer:hover span{
+    display: block;
+
+}
+.click-menu-footer:hover a{
+    margin-left: 10px;
+}
+.click-menu-footer a{
+    padding-left: 10px;
+    position: relative;
+    text-decoration: none;
+    font-family: product Sans;
+    color: #252525;
+    display: block;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.click-menu-footer a:hover{
+    color: #f7941d;
+    
+}
+.footer-right h2{
+    
+}
+.footer-right-contact img{
+    width: 50px;
+    padding: 15px 0;
+}
+
+.submit-email{
+    display: flex;
+}

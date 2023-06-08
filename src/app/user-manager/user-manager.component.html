@@ -1,0 +1,27 @@
+
+<div class="container" style="margin-top: 600px;">
+    <div class="row">
+        <h2>Danh sách khách hàng</h2>
+        <table class="table-warning" [border]="1" style="border-collapse: collapse;">
+            <tr class= "head">
+                <th>id</th>
+                <th>Tên</th>
+                <th>email</th>
+                <th>password</th>
+                <th>phone</th>
+                <th>address</th>
+            </tr>
+            <tr class="table-warning" *ngFor="let user of list">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.address}}</td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    
+    
+    </div>

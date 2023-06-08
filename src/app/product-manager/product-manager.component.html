@@ -1,0 +1,64 @@
+<div class="fui-container" style="margin-bottom: 300px;margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 login-form">
+                <h3>Thêm sản phẩm</h3>
+                <form [formGroup]="Form" (ngSubmit)="onSubmit( 1,Form.value)" class="form-signup">
+                    <label for="cate">Chọn danh mục sản phẩm</label>
+                    <select formControlName="cate_id" name="cate_id" id="cate" class="login-form-control">
+                        <option class="login-form-control" value="" disabled selected>Chọn danh mục sản phẩm</option>
+                        <option class="login-form-control" *ngFor="let cate of listCates" [value]="cate.cateid">{{ cate.cateid }}</option>
+                    </select>
+                    <input type="text" placeholder="Nhập tên" class="form-control login-form-control" formControlName="name" required>
+                    <div>
+                        <label for="img">Thêm ảnh</label>
+                        <input type="text" class="form-control login-form-control" formControlName="img" required>
+                    </div> 
+                    <input type="text" placeholder="Nhập giá" class="form-control login-form-control" formControlName="price" required> 
+                    <div class="sign-in">
+                        <input type="submit" class="signin" [disabled]="!Form.valid" value="Thêm">
+                    </div>
+                </form>
+                
+                <h3 id="error" style="color: red; text-align: center;font-size:15px;margin-top: 20px;"></h3>
+                <h3 id="result" style="color: green; text-align: center;font-size:20px;"></h3>
+            </div>
+            
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <h2>Danh sách sản phẩm</h2>
+        <table class="table-warning" [border]="1" style="border-collapse: collapse;">
+            <tr class= "head">
+                <th>id</th>
+                <th>Mã danh mục</th>
+                <th>Tên</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Delete</th>
+                <th>Sửa</th>
+            </tr>
+            <tr class="table-warning" *ngFor="let product of list">
+                <td>{{product.id}}</td>
+                <td>{{product.cateId}}</td>
+                <td>{{product.name}}</td>
+                <td><img src="{{product.img}}" alt="" width="50%" height="200"></td>
+                <td>{{product.price}}</td>
+               
+                <td colspan="2">
+                    <button style="width: 50px;padding: 5px 0;background-color: aquamarine;" (click)="deleteProduct(product.id)">Xoá</button>
+                </td>
+                <td><button style="width: 50px;padding: 5px 0;background-color: aquamarine;" (click)="editProduct(product.id)">Sửa</button></td>
+            </tr>
+        </table>
+        <br><br>
+    </div>
+    
+    
+    </div>

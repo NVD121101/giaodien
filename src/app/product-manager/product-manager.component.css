@@ -1,0 +1,56 @@
+/* Đăng kí */
+.login-form{
+    margin-top: 20px;
+    text-align: center;
+}
+.login-form h3{
+    color:#252525;
+
+    font-size:26px;
+    letter-spacing: 0.26px;
+    line-height: 22px;
+    text-align: center;
+    text-transform:uppercase;
+}
+.login-form a{
+    text-decoration: none;
+}
+
+.login-form a img{
+    margin-top: 40px;
+    max-width: 130px;
+}
+.login-form form{
+    outline: none;
+}
+.login-form-control{
+    background-color:#ffffff;
+    border:1px solid #252525;
+    font-family:Product Sans;
+    font-size:14px;
+    line-height: 21px;
+    margin:0px 0px 15px;
+    padding:15px 20px;
+    outline: none;
+}
+
+.signin{
+    margin-top:10px;
+    align-items:flex-start;
+    background-color:#f7941d;
+    border-radius:5px ;
+    color:#ffffff;
+    display:inline-block;
+    font-family: Product Sans;
+    line-height:45px;
+    padding:0px 65px;
+    text-align: center;
+    border: none;
+}
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }

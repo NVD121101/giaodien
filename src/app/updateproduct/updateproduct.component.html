@@ -1,0 +1,25 @@
+<div class="fui-container" style="margin-bottom: 300px;margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 login-form">
+                <h3>Sửa sản phẩm</h3>
+                    <form [formGroup]="add" (ngSubmit)="onSubmit()" class="form-signup">
+                    <input type="text" placeholder="Nhập tên" class="form-control login-form-control" formControlName="name" required>
+                    <div>
+                        <label for="img">Sửa ảnh</label>
+                        <input type="text" class="form-control login-form-control" formControlName="img" required>
+                    </div> 
+                    <input type="text" placeholder="Nhập giá" class="form-control login-form-control" formControlName="price" required> 
+                    <div class="sign-in">
+                        <input type="submit" class="signin"  [disabled]="!add.valid" value="Sửa">
+                    </div>
+                </form>
+                <h3 id="error" style="color: red; text-align: center;font-size:15px;margin-top: 20px;"></h3>
+                <h3 id="result" style="color: green; text-align: center;font-size:20px;"></h3>
+            </div>
+            
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>

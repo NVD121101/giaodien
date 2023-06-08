@@ -1,0 +1,37 @@
+<div class="fui-container" style="margin-bottom: 300px;margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 login-form">
+                <h3>Thêm danh mục</h3>
+                <form [formGroup]="Form" (ngSubmit)="onSubmit(Form.value)" class="form-signup">
+                    <input type="text" placeholder="Nhập tên" class="form-control login-form-control" formControlName="name" required>
+                    <div class="sign-in">
+                        <input type="submit" class="signin"  [disabled]="!Form.valid" value="Thêm">
+                    </div>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 400px;">
+    <div class="row">
+        <h2>Danh sách sản phẩm</h2>
+        <table class="table-warning" [border]="1" style="border-collapse: collapse;">
+            <tr class="head">
+              <th>ID</th>
+              <th>Tên danh mục</th>
+            </tr>
+            <tr class="table-warning" *ngFor="let cate of listCates">
+              <td>{{ cate.cateid }}</td>
+              <td>{{ cate.name }}</td>
+            </tr>
+          </table>
+        <br><br>
+    </div>
+    
+    
+    </div>

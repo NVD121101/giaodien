@@ -1,0 +1,15 @@
+.list_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list_login a{
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #f7941d;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}

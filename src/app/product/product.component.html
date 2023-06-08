@@ -1,0 +1,14 @@
+<div class="flui-container" style="margin-top: 600px;">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 products">
+            <div href="" class="product" *ngFor="let product of list">
+                <img src="{{product.img}}" alt="">
+                <h5>{{product.name}}</h5>
+                <span>{{product.price}} đ</span>
+                <button>Mua hàng</button>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

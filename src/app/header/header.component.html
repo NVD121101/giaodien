@@ -1,0 +1,41 @@
+<div class="container-fluid all-list">
+        <!-- search and login -->
+    <div class="row nav">
+        <div class="col-1"></div>
+        <div class="col-2 nav-left">
+            <a routerLink="/" routerLinkActive="active"><img  src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="col-6 nav-center">
+            <form action="TimKiem.php" method="GET">
+                <input  type="text" id="form-input" class="form-control" placeholder="Nhập từ khóa tìm kiếm" name="tukhoa">
+                <button type="submit" class="btn-search"><img src="./assets/images/search.svg" alt=""></button>    
+            </form>
+        </div>
+        <div class="col-3 nav-right">
+            <div class="login">
+                <a routerLink="/register" routerLinkActive="active">Đăng kí</a>|
+                <a routerLink="/login" routerLinkActive="active">Đăng nhập</a> | 
+                <a routerLink="/admin" routerLinkActive="active">Admin</a>
+                <a class='dolly' routerLink="/order" routerLinkActive="active">
+                    <img src="./assets/images/cart.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-6 menu">
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-menu-list"><a routerLink="/">trang chủ <span></span></a></li>
+                    <li class="nav-menu-list"><a routerLink="/">tin tức<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-2 hotlines">
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>
